@@ -1,0 +1,164 @@
+/* Normalização e Vars */
+:root {
+    --primary-color: #FF9A6C;
+    --secondary-color: #263138;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: var(--secondary-color);
+}
+
+/* Header */
+header {
+    background-color:var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    padding: 24px 80px 24px 80px
+}
+header nav a {
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 32px;
+    text-decoration: none;
+}
+
+/* Inicio */
+#hero-page {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 80px 128px 80px;
+    position: relative;
+}
+h1,
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+p {
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+.button {
+    background-color: var(--primary-color);
+    border-radius: .5rem;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+.transparente {
+    background-color: transparent;
+    color: var(--primary-color);
+    text-underline-offset: 4px;
+    text-decoration: underline;
+}
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+/* Clínica */
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 5rem;
+}
+#clinica li {
+    margin: 0 0 1rem 2rem;
+}
+
+/* Farmácia */
+#farmacia {
+    padding: 4rem 5rem;
+    text-align: center;
+}
+#farmacia img {
+    margin: 4rem auto;
+}
+#farmacia p {
+    min-width: 950px;
+    margin: 0 auto;
+}
+
+/* Dúvidas */
+#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 5rem;
+}
+.duvida {
+    position: relative;
+}
+.duvida h3 {
+    border: 2px solid var(--primary-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+.duvida img {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+}
+.duvida p {
+    border: 1px solid var(--primary-color);
+    border-top: none;
+    border-radius: 0 0 .5rem .5rem;
+    margin-top: -.5rem;
+    padding: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 4rem 5rem;
+}
+footer img,
+footer strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+footer nav a {
+    color: var(--secondary-color);
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    max-width: 350px;
+}
+footer p {
+    margin-bottom: 1rem;
+    max-width: 350px;
+}
+footer p a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Marca d'Água */
+#copyright {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+#copyright a {
+    color: var(--primary-color);
+}
