@@ -10,6 +10,8 @@
     padding: 0;
 }
 body {
+    width: 100vw;
+    height: 100vh;
     color: var(--secondary-color);
 }
 
@@ -87,7 +89,7 @@ p {
     margin: 4rem auto;
 }
 #farmacia p {
-    min-width: 950px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -170,4 +172,100 @@ footer p a {
 }
 #copyright a {
     color: var(--primary-color);
+}
+
+/* Responsividade */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Reduce the font size for small screens */
+    }
+
+    header {
+        flex-direction: column; /* Stack navigation vertically on small screens */
+        align-items: center;
+    }
+
+    header nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem auto 0;
+    }
+    header nav a {
+        padding: 5px;
+    }
+    header nav a:nth-child(2n-1) { /* pegar todos os links(a) filhos na nav do header que forem ímpares */
+        text-align: right;
+    }
+
+    #hero-page {
+        flex-direction: column; /* Stack content on top for small screens */
+        padding: 24px;
+    }
+    .hero-texts {
+        text-align: center;
+    }
+    .button {
+        margin-top: 16px;
+    }
+
+    #clinica {
+        flex-direction: column; /* Stack content on top for small screens */
+        padding: 24px;
+    }
+
+    #clinica li {
+        margin-left: 0;
+    }
+
+    #farmacia {
+        padding: 24px;
+    }
+
+    #farmacia img {
+        margin: 16px auto;
+    }
+
+    #farmacia p {
+        margin: 0 auto;
+    }
+
+    #duvidas {
+        flex-direction: column; /* Stack content on top for small screens */
+        padding: 24px;
+    }
+
+    .duvida h3 {
+        padding: 8px;
+    }
+
+    .duvida img {
+        display: none; /* Hide the arrow-down icon for small screens */
+    }
+
+    .duvida p {
+        border: none;
+        margin-top: 0;
+        padding: 8px;
+        height: auto;
+        opacity: 1;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium screens here */
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    /* Adjust styles for large screens here */
 }
