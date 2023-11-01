@@ -6,12 +6,18 @@
     <title>Institutional Webpage</title>
     <style>html{scroll-behavior: smooth;}</style>
 
-    <link rel="stylesheet" href="index.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href="index.html">
-            <img src="img/logo.svg" alt="Logo da Pagina">
+            <img src="img/logo-white.svg" alt="Logo da Pagina">
         </a>
 
         <nav>
@@ -33,9 +39,11 @@
                     dedicados e serviços abrangentes, oferecemos uma experiência acolhedora e personalizada,
                     garantindo o bem-estar, a saúde e a felicidade dos seus animais de estimação.
                 </p>
-                <a href="wa.me/..." target="_blank">Marque uma consulta</a>
-                <a href="#clinica">Conheça nossa clínica</a>
+                <a class="button" href="https://wa.me/5555984535174" target="_blank">Marque uma consulta</a>
+                <a class="button transparente" href="#clinica">Conheça nossa clínica</a>
             </div>
+
+            <img class="absolute" src="img/shape.svg" alt="">
         </section>
 
         <section id="clinica">
@@ -74,7 +82,7 @@
             <div>
                 <h2>Ficou alguma dúvida?</h2>
 
-                <div>
+                <div class="duvida">
                     <h3>Quais serviços são oferecidos pela clínica da PetLife</h3>
                     <img src="img/arrow-down.svg" alt="flecha indicativa para expandir seção">
                     <p>
@@ -82,7 +90,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="duvida">
                     <h3>Quais espécies de animais a clínica veterinária	atende?</h3>
                     <img src="img/arrow-down.svg" alt="flecha indicativa para expandir seção">
                     <p>
@@ -90,7 +98,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="duvida">
                     <h3>A clínica da PetLife possui serviços de emergência?</h3>
                     <img src="img/arrow-down.svg" alt="flecha indicativa para expandir seção">
                     <p>
@@ -98,7 +106,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="duvida">
                     <h3>A clínica oferece serviços de banho e tosa?</h3>
                     <img src="img/arrow-down.svg" alt="flecha indicativa para expandir seção">
                     <p>
@@ -128,14 +136,16 @@
 
         <div>
             <strong>Encontre-nos</strong>
-            <p>WhatsApp: <a href="https://wa.me/55912345678" target="_blank">(55) 91234-5678</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5555984535174" target="_blank">(55) 91234-5678</a></p>
             <p>Email: <a href="mailto:contato@petlife.com">contato@petlife.com</a></p>
             <p>Endreço: Av. 7 de Setembro, nº 42 - Centro</p>
         </div>
     </footer>
 
-    <div>
+    <div id="copyright">
         Desenvolvido por <a href="https://github.com/AndreBauzil" target="_blank"">Bauzil</a>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
