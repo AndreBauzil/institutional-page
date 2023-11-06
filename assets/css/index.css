@@ -174,6 +174,12 @@ footer p a {
     color: var(--primary-color);
 }
 
+.container {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+}
+
 /* Responsividade */
 img {
     max-width: 100%;
@@ -182,7 +188,7 @@ img {
 
 @media (max-width: 600px) {
     body {
-        font-size: 14px; /* Reduce the font size for small screens */
+        font-size: 14px;
     }
 
     header {
@@ -262,7 +268,56 @@ img {
 
 /* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
-    /* Adjust styles for medium screens here */
+    body {
+        font-size: 28px; /* Adjust font size for tablet screens if needed */
+    }
+    #hero-page,
+    #clinica,
+    #farmacia,
+    #duvidas {
+        display: grid;
+        justify-items: center;
+    }
+
+
+    header {
+        padding: 16px 40px; /* Reduce header padding for tablets */
+    }
+    header nav a {
+        padding: 16px 24px; /* Adjust padding for navigation links */
+    }
+
+    #hero-page {
+        justify-items: center;
+        display: grid;
+        padding: 0 3rem;
+    }
+    .hero-texts {
+        font-size: 28px; /* Adjust font size for headings in the hero section */
+    }
+    .button {
+        padding: 2rem 4rem;
+    }
+    .button:nth-child(1) {
+        margin-top: 3rem;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #farmacia img {
+        margin: 24px auto; /* Adjust margin for the pharmacy section image */
+    }
+
+    .duvida h3 {
+        padding: 16px; /* Adjust padding for FAQ question headings */
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
 
 /* Desktop */
