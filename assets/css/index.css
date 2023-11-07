@@ -16,7 +16,7 @@ body {
 }
 
 /* Header */
-header {
+header > .container {
     background-color:var(--primary-color);
     display: flex;
     align-items: center;
@@ -37,6 +37,9 @@ header nav a {
     gap: 32px;
     padding: 24px 80px 128px 80px;
     position: relative;
+}
+#hero-page > .container {
+    display: flex;
 }
 h1,
 h2 {
@@ -78,6 +81,9 @@ p {
 }
 #clinica li {
     margin: 0 0 1rem 2rem;
+}
+#clinica > .container {
+    flex-direction: column;
 }
 
 /* Farmácia */
@@ -176,7 +182,6 @@ footer p a {
 
 .container {
     max-width: 1440px;
-    display: flex;
     align-items: center;
 }
 
